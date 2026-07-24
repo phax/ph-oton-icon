@@ -1,0 +1,15 @@
+.classpath
+.DS_Store 
+.factorypath
+.pmd
+.project 
+zz
+
+*.iml
+hs_err_*.log
+
+.claude/
+.idea/
+.settings/ 
+generated/
+target/
