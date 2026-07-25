@@ -64,11 +64,12 @@ redistributed under their respective upstream licenses (see the `LICENSE`,
 
 ## News and noteworthy
 
-v1.0.0 - work in progress
+v1.0.0 - 2026-07-25
 * Initial release
 * Extracted the icon libraries from the `ph-oton-icon` module of [ph-oton](https://github.com/phax/ph-oton) into this standalone project
 * The Maven groupId is `com.helger.photon.icon`
-* One artifact per icon library, so an application only pulls in the icon set it uses: FontAwesome 4.7.0, FontAwesome 5.15.4, Material Design Icons 3.0.1 and Bootstrap Icons 1.11.3
+* One artifact per icon library, so an application only pulls in the icon set it uses: FontAwesome 4.7.0, FontAwesome 5.15.4, FontAwesome 6.7.2, Material Design Icons 3.0.1 and Bootstrap Icons 1.11.3
 * The icon enums implement `IIcon` and use `DefaultIcons` / `EDefaultIcon` from `com.helger.photon:ph-oton-uicore`
+* `ph-oton-icon-fontawesome6` models the three FontAwesome 6 Free styles (solid, regular, brands) via `EFontAwesome6IconStyle` using the modern `fa-solid` / `fa-regular` / `fa-brands` prefixes; each icon carries its default style, and `EFontAwesome6Icon.getAsNode (EFontAwesome6IconStyle)` renders an icon in an explicit style (e.g. the regular variant)
 * Requires Java 17 or later
 
