@@ -65,7 +65,7 @@
 
   <properties>
     <ph-commons.version>12.3.3</ph-commons.version>
-    <ph-oton.version>10.2.3</ph-oton.version>
+    <ph-oton.version>10.3.0</ph-oton.version>
   </properties>
 
   <dependencyManagement>
@@ -97,6 +97,11 @@
       </dependency>
       <dependency>
         <groupId>com.helger.photon.icon</groupId>
+        <artifactId>ph-oton-icon-fontawesome6</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.helger.photon.icon</groupId>
         <artifactId>ph-oton-icon-materialdesign</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -111,6 +116,7 @@
   <modules>
     <module>ph-oton-icon-fontawesome4</module>
     <module>ph-oton-icon-fontawesome5</module>
+    <module>ph-oton-icon-fontawesome6</module>
     <module>ph-oton-icon-materialdesign</module>
     <module>ph-oton-icon-bootstrap</module>
   </modules>

@@ -16,6 +16,7 @@ library's `getAllCSSFiles ()` on the ph-oton side.
 |----------|--------------|---------|
 | `ph-oton-icon-fontawesome4`  | `com.helger.photon.icon.fontawesome4`  | FontAwesome 4.7.0 |
 | `ph-oton-icon-fontawesome5`  | `com.helger.photon.icon.fontawesome5`  | FontAwesome 5.15.4 |
+| `ph-oton-icon-fontawesome6`  | `com.helger.photon.icon.fontawesome6`  | FontAwesome 6.7.2 |
 | `ph-oton-icon-materialdesign` | `com.helger.photon.icon.materialdesign` | Material Design Icons 3.0.1 |
 | `ph-oton-icon-bootstrap`     | `com.helger.photon.icon.bootstrap`     | Bootstrap Icons 1.11.3 |
 

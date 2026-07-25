@@ -51,9 +51,8 @@ public class MainExtractFontAwesome4CSSClasses
       {
         final ICommonsList <ICSSSelectorMember> aMembers = aSelector.getAllMembers ();
         for (final ICSSSelectorMember aMember : aMembers)
-          if (aMember instanceof CSSSelectorSimpleMember)
+          if (aMember instanceof final CSSSelectorSimpleMember aSM)
           {
-            final CSSSelectorSimpleMember aSM = (CSSSelectorSimpleMember) aMember;
             if (aSM.isClass ())
               aClasses.add (aSM.getValue ());
             else
