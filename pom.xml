@@ -27,7 +27,7 @@
   </parent>
   <groupId>com.helger.photon.icon</groupId>
   <artifactId>ph-oton-icon-parent-pom</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-oton-icon</name>
   <description>Base POM providing free web icon libraries for the ph-oton stack</description>
@@ -46,7 +46,7 @@
     <connection>scm:git:https://github.com/phax/ph-oton-icon.git</connection>
     <developerConnection>scm:git:https://github.com/phax/ph-oton-icon.git</developerConnection>
     <url>https://github.com/phax/ph-oton-icon</url>
-    <tag>ph-oton-icon-parent-pom-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <organization>
