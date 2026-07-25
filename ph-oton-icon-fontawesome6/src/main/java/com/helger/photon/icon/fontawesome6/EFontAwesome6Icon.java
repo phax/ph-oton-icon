@@ -26,6 +26,7 @@ import com.helger.html.hc.html.IHCElement;
 import com.helger.html.hc.html.textlevel.HCI;
 import com.helger.html.hc.html.textlevel.HCSpan;
 import com.helger.html.resource.css.ICSSPathProvider;
+import com.helger.photon.app.html.PhotonCSS;
 import com.helger.photon.uicore.icon.DefaultIcons;
 import com.helger.photon.uicore.icon.EDefaultIcon;
 import com.helger.photon.uicore.icon.IIcon;
@@ -943,7 +944,8 @@ public enum EFontAwesome6Icon implements IIcon
   HOUSE_FIRE (CFontAwesome6CSS.FA_HOUSE_FIRE, EFontAwesome6IconStyle.SOLID),
   HOUSE_FLAG (CFontAwesome6CSS.FA_HOUSE_FLAG, EFontAwesome6IconStyle.SOLID),
   HOUSE_FLOOD_WATER (CFontAwesome6CSS.FA_HOUSE_FLOOD_WATER, EFontAwesome6IconStyle.SOLID),
-  HOUSE_FLOOD_WATER_CIRCLE_ARROW_RIGHT (CFontAwesome6CSS.FA_HOUSE_FLOOD_WATER_CIRCLE_ARROW_RIGHT, EFontAwesome6IconStyle.SOLID),
+  HOUSE_FLOOD_WATER_CIRCLE_ARROW_RIGHT (CFontAwesome6CSS.FA_HOUSE_FLOOD_WATER_CIRCLE_ARROW_RIGHT,
+                                        EFontAwesome6IconStyle.SOLID),
   HOUSE_LAPTOP (CFontAwesome6CSS.FA_HOUSE_LAPTOP, EFontAwesome6IconStyle.SOLID),
   HOUSE_LOCK (CFontAwesome6CSS.FA_HOUSE_LOCK, EFontAwesome6IconStyle.SOLID),
   HOUSE_MEDICAL (CFontAwesome6CSS.FA_HOUSE_MEDICAL, EFontAwesome6IconStyle.SOLID),
@@ -1291,7 +1293,8 @@ public enum EFontAwesome6Icon implements IIcon
   PERSON_WALKING (CFontAwesome6CSS.FA_PERSON_WALKING, EFontAwesome6IconStyle.SOLID),
   PERSON_WALKING_ARROW_LOOP_LEFT (CFontAwesome6CSS.FA_PERSON_WALKING_ARROW_LOOP_LEFT, EFontAwesome6IconStyle.SOLID),
   PERSON_WALKING_ARROW_RIGHT (CFontAwesome6CSS.FA_PERSON_WALKING_ARROW_RIGHT, EFontAwesome6IconStyle.SOLID),
-  PERSON_WALKING_DASHED_LINE_ARROW_RIGHT (CFontAwesome6CSS.FA_PERSON_WALKING_DASHED_LINE_ARROW_RIGHT, EFontAwesome6IconStyle.SOLID),
+  PERSON_WALKING_DASHED_LINE_ARROW_RIGHT (CFontAwesome6CSS.FA_PERSON_WALKING_DASHED_LINE_ARROW_RIGHT,
+                                          EFontAwesome6IconStyle.SOLID),
   PERSON_WALKING_LUGGAGE (CFontAwesome6CSS.FA_PERSON_WALKING_LUGGAGE, EFontAwesome6IconStyle.SOLID),
   PERSON_WALKING_WITH_CANE (CFontAwesome6CSS.FA_PERSON_WALKING_WITH_CANE, EFontAwesome6IconStyle.SOLID),
   PESETA_SIGN (CFontAwesome6CSS.FA_PESETA_SIGN, EFontAwesome6IconStyle.SOLID),
@@ -1782,7 +1785,8 @@ public enum EFontAwesome6Icon implements IIcon
   UP_DOWN (CFontAwesome6CSS.FA_UP_DOWN, EFontAwesome6IconStyle.SOLID),
   UP_DOWN_LEFT_RIGHT (CFontAwesome6CSS.FA_UP_DOWN_LEFT_RIGHT, EFontAwesome6IconStyle.SOLID),
   UP_LONG (CFontAwesome6CSS.FA_UP_LONG, EFontAwesome6IconStyle.SOLID),
-  UP_RIGHT_AND_DOWN_LEFT_FROM_CENTER (CFontAwesome6CSS.FA_UP_RIGHT_AND_DOWN_LEFT_FROM_CENTER, EFontAwesome6IconStyle.SOLID),
+  UP_RIGHT_AND_DOWN_LEFT_FROM_CENTER (CFontAwesome6CSS.FA_UP_RIGHT_AND_DOWN_LEFT_FROM_CENTER,
+                                      EFontAwesome6IconStyle.SOLID),
   UP_RIGHT_FROM_SQUARE (CFontAwesome6CSS.FA_UP_RIGHT_FROM_SQUARE, EFontAwesome6IconStyle.SOLID),
   UPLOAD (CFontAwesome6CSS.FA_UPLOAD, EFontAwesome6IconStyle.SOLID),
   UPS (CFontAwesome6CSS.FA_UPS, EFontAwesome6IconStyle.BRANDS),
@@ -1949,11 +1953,10 @@ public enum EFontAwesome6Icon implements IIcon
   }
 
   /**
-   * @return The default style (solid, regular or brands) of this icon. In
-   *         FontAwesome 6 Free this is never {@link EFontAwesome6IconStyle#REGULAR}
-   *         because every regular icon is also available as solid; use
-   *         {@link #getAsNode(EFontAwesome6IconStyle)} to explicitly request the
-   *         regular variant.
+   * @return The default style (solid, regular or brands) of this icon. In FontAwesome 6 Free this
+   *         is never {@link EFontAwesome6IconStyle#REGULAR} because every regular icon is also
+   *         available as solid; use {@link #getAsNode(EFontAwesome6IconStyle)} to explicitly
+   *         request the regular variant.
    */
   @NonNull
   public EFontAwesome6IconStyle getStyle ()
@@ -1973,7 +1976,8 @@ public enum EFontAwesome6Icon implements IIcon
   }
 
   @NonNull
-  public <T extends IHCElement <?>> T applyToNode (@NonNull final T aElement, @NonNull final EFontAwesome6IconStyle eStyle)
+  public <T extends IHCElement <?>> T applyToNode (@NonNull final T aElement,
+                                                   @NonNull final EFontAwesome6IconStyle eStyle)
   {
     aElement.addClasses (eStyle.getCSSClass (), m_aCSSClass);
     aElement.customAttrs ().setAriaHidden (true);
@@ -1987,8 +1991,8 @@ public enum EFontAwesome6Icon implements IIcon
   }
 
   /**
-   * Get this icon rendered in an explicit style. Use this to request the
-   * <code>regular</code> variant of an icon that supports it.
+   * Get this icon rendered in an explicit style. Use this to request the <code>regular</code>
+   * variant of an icon that supports it.
    *
    * @param eStyle
    *        The style to apply. May not be <code>null</code>.
@@ -2127,7 +2131,8 @@ public enum EFontAwesome6Icon implements IIcon
   }
 
   @NonNull
-  public static HCSpan createIconStack (@NonNull final IHCElement <?> aLargeIcon, @NonNull final IHCElement <?> aSmallIcon)
+  public static HCSpan createIconStack (@NonNull final IHCElement <?> aLargeIcon,
+                                        @NonNull final IHCElement <?> aSmallIcon)
   {
     final HCSpan ret = new HCSpan ().addClasses (CFontAwesome6CSS.FA_STACK, CFontAwesome6CSS.FA_LG);
     ret.addChild (aLargeIcon.addClass (CFontAwesome6CSS.FA_STACK_2X));
@@ -2170,5 +2175,17 @@ public enum EFontAwesome6Icon implements IIcon
   public static ICommonsList <ICSSPathProvider> getAllCSSFiles ()
   {
     return new CommonsArrayList <> (EIconCSSPathProvider.FONT_AWESOME6);
+  }
+
+  public static void registerResourcesForGlobal ()
+  {
+    for (final ICSSPathProvider aItem : getAllCSSFiles ())
+      PhotonCSS.registerCSSIncludeForGlobal (aItem);
+  }
+
+  public static void registerResourcesForThisRequest ()
+  {
+    for (final ICSSPathProvider aItem : getAllCSSFiles ())
+      PhotonCSS.registerCSSIncludeForThisRequest (aItem);
   }
 }

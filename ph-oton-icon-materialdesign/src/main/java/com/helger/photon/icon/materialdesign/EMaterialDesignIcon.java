@@ -27,6 +27,7 @@ import com.helger.html.css.ICSSClassProvider;
 import com.helger.html.hc.html.IHCElement;
 import com.helger.html.hc.html.textlevel.HCI;
 import com.helger.html.resource.css.ICSSPathProvider;
+import com.helger.photon.app.html.PhotonCSS;
 import com.helger.photon.uicore.icon.DefaultIcons;
 import com.helger.photon.uicore.icon.EDefaultIcon;
 import com.helger.photon.uicore.icon.IIcon;
@@ -1083,5 +1084,17 @@ public enum EMaterialDesignIcon implements IIcon
     return new CommonsArrayList <> (EIconCSSPathProvider.MATERIAL_ICONS,
                                     EIconCSSPathProvider.MATERIAL_ICONS_LIST,
                                     EIconCSSPathProvider.PH_OTON_MATERIAL_DESIGN);
+  }
+
+  public static void registerResourcesForGlobal ()
+  {
+    for (final ICSSPathProvider aItem : getAllCSSFiles ())
+      PhotonCSS.registerCSSIncludeForGlobal (aItem);
+  }
+
+  public static void registerResourcesForThisRequest ()
+  {
+    for (final ICSSPathProvider aItem : getAllCSSFiles ())
+      PhotonCSS.registerCSSIncludeForThisRequest (aItem);
   }
 }

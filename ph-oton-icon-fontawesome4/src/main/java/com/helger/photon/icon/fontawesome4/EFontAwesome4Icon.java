@@ -26,6 +26,7 @@ import com.helger.html.hc.html.IHCElement;
 import com.helger.html.hc.html.textlevel.HCI;
 import com.helger.html.hc.html.textlevel.HCSpan;
 import com.helger.html.resource.css.ICSSPathProvider;
+import com.helger.photon.app.html.PhotonCSS;
 import com.helger.photon.uicore.icon.DefaultIcons;
 import com.helger.photon.uicore.icon.EDefaultIcon;
 import com.helger.photon.uicore.icon.IIcon;
@@ -936,7 +937,8 @@ public enum EFontAwesome4Icon implements IIcon
   }
 
   @NonNull
-  public static HCSpan createIconStack (@NonNull final IHCElement <?> aLargeIcon, @NonNull final IHCElement <?> aSmallIcon)
+  public static HCSpan createIconStack (@NonNull final IHCElement <?> aLargeIcon,
+                                        @NonNull final IHCElement <?> aSmallIcon)
   {
     final HCSpan ret = new HCSpan ().addClasses (CFontAwesome4CSS.FA_STACK, CFontAwesome4CSS.FA_LG);
     ret.addChild (aLargeIcon.addClass (CFontAwesome4CSS.FA_STACK_2X));
@@ -979,5 +981,17 @@ public enum EFontAwesome4Icon implements IIcon
   public static ICommonsList <ICSSPathProvider> getAllCSSFiles ()
   {
     return new CommonsArrayList <> (EIconCSSPathProvider.FONT_AWESOME4);
+  }
+
+  public static void registerResourcesForGlobal ()
+  {
+    for (final ICSSPathProvider aItem : getAllCSSFiles ())
+      PhotonCSS.registerCSSIncludeForGlobal (aItem);
+  }
+
+  public static void registerResourcesForThisRequest ()
+  {
+    for (final ICSSPathProvider aItem : getAllCSSFiles ())
+      PhotonCSS.registerCSSIncludeForThisRequest (aItem);
   }
 }

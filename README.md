@@ -64,6 +64,9 @@ redistributed under their respective upstream licenses (see the `LICENSE`,
 
 ## News and noteworthy
 
+v1.0.1 - 2026-07-25
+* Added missing `registerResourcesFor(Global]ThisRequest)` methods
+
 v1.0.0 - 2026-07-25
 * Initial release
 * Extracted the icon libraries from the `ph-oton-icon` module of [ph-oton](https://github.com/phax/ph-oton) into this standalone project
