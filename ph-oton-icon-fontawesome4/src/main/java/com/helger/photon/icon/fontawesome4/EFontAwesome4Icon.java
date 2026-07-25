@@ -26,9 +26,9 @@ import com.helger.html.hc.html.IHCElement;
 import com.helger.html.hc.html.textlevel.HCI;
 import com.helger.html.hc.html.textlevel.HCSpan;
 import com.helger.html.resource.css.ICSSPathProvider;
-import com.helger.photon.icon.api.DefaultIcons;
-import com.helger.photon.icon.api.EDefaultIcon;
-import com.helger.photon.icon.api.IIcon;
+import com.helger.photon.uicore.icon.DefaultIcons;
+import com.helger.photon.uicore.icon.EDefaultIcon;
+import com.helger.photon.uicore.icon.IIcon;
 
 /**
  * Font Awesome icons

@@ -55,8 +55,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.helger.photon.icon</groupId>
-      <artifactId>ph-oton-icon-api</artifactId>
+      <groupId>com.helger.photon</groupId>
+      <artifactId>ph-oton-uicore</artifactId>
     </dependency>
 
     <dependency>

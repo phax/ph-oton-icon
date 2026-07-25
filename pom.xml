@@ -79,15 +79,12 @@
       </dependency>
       <dependency>
         <groupId>com.helger.photon</groupId>
-        <artifactId>ph-oton-html</artifactId>
+        <artifactId>ph-oton-parent-pom</artifactId>
         <version>${ph-oton.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
-      <dependency>
-        <groupId>com.helger.photon.icon</groupId>
-        <artifactId>ph-oton-icon-api</artifactId>
-        <version>${project.version}</version>
-      </dependency>
       <dependency>
         <groupId>com.helger.photon.icon</groupId>
         <artifactId>ph-oton-icon-fontawesome4</artifactId>
@@ -112,7 +109,6 @@
   </dependencyManagement>
 
   <modules>
-    <module>ph-oton-icon-api</module>
     <module>ph-oton-icon-fontawesome4</module>
     <module>ph-oton-icon-fontawesome5</module>
     <module>ph-oton-icon-materialdesign</module>
