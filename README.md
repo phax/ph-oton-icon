@@ -1,5 +1,12 @@
 # ph-oton-icon
 
+<!-- ph-badge-start -->
+[![Sonatype Central](https://maven-badges.sml.io/sonatype-central/com.helger.photon.icon/ph-oton-icon-parent-pom/badge.svg)](https://maven-badges.sml.io/sonatype-central/com.helger.photon.icon/ph-oton-icon-parent-pom/)
+[![javadoc](https://javadoc.io/badge2/com.helger.photon.icon/ph-oton-icon-fontawesome4/javadoc.svg)](https://javadoc.io/doc/com.helger.photon.icon/ph-oton-icon-fontawesome4)
+
+> If this project saved you some time or made your day a little easier, a star would mean a lot — it helps others find it too.
+<!-- ph-badge-end -->
+
 Free web icon libraries for the [ph-oton](https://github.com/phax/ph-oton) web stack,
 split into one Maven artifact per icon library so an application only pulls in the
 icon set it actually uses.
@@ -76,3 +83,7 @@ v1.0.0 - 2026-07-25
 * `ph-oton-icon-fontawesome6` models the three FontAwesome 6 Free styles (solid, regular, brands) via `EFontAwesome6IconStyle` using the modern `fa-solid` / `fa-regular` / `fa-brands` prefixes; each icon carries its default style, and `EFontAwesome6Icon.getAsNode (EFontAwesome6IconStyle)` renders an icon in an explicit style (e.g. the regular variant)
 * Requires Java 17 or later
 
+---
+
+My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodingStyleguide.md) |
+It is appreciated if you star the GitHub project if you like it.
