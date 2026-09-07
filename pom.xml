@@ -29,7 +29,7 @@
   <artifactId>ph-oton-icon-parent-pom</artifactId>
   <version>1.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>ph-oton-icon</name>
+  <name>ph-oton-icon-parent-pom</name>
   <description>Base POM providing free web icon libraries for the ph-oton stack</description>
   <url>https://github.com/phax/ph-oton-icon</url>
   <inceptionYear>2026</inceptionYear>
