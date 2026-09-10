@@ -22,9 +22,8 @@ import com.helger.html.css.DefaultCSSClassProvider;
 import com.helger.html.css.ICSSClassProvider;
 
 /**
- * The three icon styles available in FontAwesome 6 Free. Each style maps to the
- * FontAwesome 6 style class that must be combined with the icon class (e.g.
- * <code>fa-solid fa-user</code>).
+ * The three icon styles available in FontAwesome 6 Free. Each style maps to the FontAwesome 6 style
+ * class that must be combined with the icon class (e.g. <code>fa-solid fa-user</code>).
  *
  * @author Philip Helger
  */
