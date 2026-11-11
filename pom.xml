@@ -65,7 +65,7 @@
 
   <properties>
     <ph-commons.version>12.6.0</ph-commons.version>
-    <ph-oton.version>10.7.0</ph-oton.version>
+    <ph-oton.version>10.8.0</ph-oton.version>
   </properties>
 
   <dependencyManagement>
