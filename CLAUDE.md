@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Free web-icon libraries for the ph-oton web stack (`groupId com.helger.photon.icon`). One Maven artifact per icon set so an app pulls only what it uses. Extracted from the former `ph-oton-icon` module of ph-oton.
 
-Four modules, each self-contained: `ph-oton-icon-fontawesome4`, `-fontawesome5`, `-materialdesign`, `-bootstrap`.
+Five icon modules, each self-contained: `ph-oton-icon-fontawesome4`, `-fontawesome5`, `-fontawesome6`, `-materialdesign`, `-bootstrap`. Plus `ph-oton-icon-bom`, a BOM (packaging `pom`, no code) that manages the versions of all icon modules - add new icon modules there too.
 
 ## Build & test
 
@@ -16,7 +16,7 @@ Four modules, each self-contained: `ph-oton-icon-fontawesome4`, `-fontawesome5`,
 
 ## Per-module structure
 
-Each module has package `com.helger.photon.icon.<library>` with the same three main classes:
+Each icon module has package `com.helger.photon.icon.<library>` with the same three main classes:
 - `E<Library>Icon` — enum of all icons, implements `IIcon`, each constant tied to a CSS class.
 - `C<Library>CSS` — `ICSSClassProvider` constants for every CSS class.
 - `EIconCSSPathProvider` — `ICSSPathProvider` enum for the library's stylesheets.

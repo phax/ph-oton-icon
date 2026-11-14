@@ -25,7 +25,8 @@ library's `getAllCSSFiles ()` on the ph-oton side.
 | `ph-oton-icon-fontawesome5`  | `com.helger.photon.icon.fontawesome5`  | FontAwesome 5.15.4 |
 | `ph-oton-icon-fontawesome6`  | `com.helger.photon.icon.fontawesome6`  | FontAwesome 6.7.2 |
 | `ph-oton-icon-materialdesign` | `com.helger.photon.icon.materialdesign` | Material Design Icons 3.0.1 |
-| `ph-oton-icon-bootstrap`     | `com.helger.photon.icon.bootstrap`     | Bootstrap Icons 1.11.3 |
+| `ph-oton-icon-bootstrap`     | `com.helger.photon.icon.bootstrap`     | Bootstrap Icons 1.13.2 |
+| `ph-oton-icon-bom`           | &ndash;                                 | Bill of Materials for all of the above |
 
 ## Usage
 
@@ -37,6 +38,30 @@ Add the module for the icon set you want, e.g. Bootstrap Icons:
   <artifactId>ph-oton-icon-bootstrap</artifactId>
   <version>1.0.0</version>
 </dependency>
+```
+
+Alternatively, import the BOM to manage the versions of all icon modules in one place
+and omit the versions of the individual dependencies:
+
+```xml
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.helger.photon.icon</groupId>
+      <artifactId>ph-oton-icon-bom</artifactId>
+      <version>1.0.2</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
+
+<dependencies>
+  <dependency>
+    <groupId>com.helger.photon.icon</groupId>
+    <artifactId>ph-oton-icon-bootstrap</artifactId>
+  </dependency>
+</dependencies>
 ```
 
 Each library module exposes:
@@ -70,6 +95,11 @@ redistributed under their respective upstream licenses (see the `LICENSE`,
 
 
 ## News and noteworthy
+
+v1.0.2 - 2026-11-14
+* Added the BOM artifact `ph-oton-icon-bom` that manages the versions of all icon modules
+* Importing `ph-commons-bom` and `ph-oton-bom` instead of the respective parent POMs
+* Updated to Bootstrap Icons 1.13.2
 
 v1.0.1 - 2026-07-25
 * Added missing `registerResourcesFor(Global]ThisRequest)` methods
