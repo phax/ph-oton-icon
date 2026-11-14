@@ -27,7 +27,7 @@
   </parent>
   <groupId>com.helger.photon.icon</groupId>
   <artifactId>ph-oton-icon-bom</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.2</version>
   <packaging>pom</packaging>
   <name>ph-oton-icon-bom</name>
   <description>Bill of Materials for all ph-oton-icon artifacts</description>
@@ -44,7 +44,7 @@
     <connection>scm:git:https://github.com/phax/ph-oton-icon.git</connection>
     <developerConnection>scm:git:https://github.com/phax/ph-oton-icon.git</developerConnection>
     <url>https://github.com/phax/ph-oton-icon</url>
-    <tag>HEAD</tag>
+    <tag>ph-oton-icon-parent-pom-1.0.2</tag>
   </scm>
   <organization>
     <name>Philip Helger</name>
