@@ -33,7 +33,7 @@ import com.helger.html.resource.css.ICSSPathProvider;
 public enum EIconCSSPathProvider implements ICSSPathProvider
 {
   /** https://icons.getbootstrap.com/ */
-  BOOTSTRAP_ICONS ("external/bootstrap-icons/1.11.3/font/bootstrap-icons.css"),
+  BOOTSTRAP_ICONS ("external/bootstrap-icons/1.13.2/font/bootstrap-icons.css"),
   PH_OTON_BOOTSTRAP_ICONS ("ph-oton/ph-oton-bootstrap-icons.css");
 
   private final ConstantCSSPathProvider m_aPP;

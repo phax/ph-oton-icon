@@ -30,7 +30,7 @@ import com.helger.html.css.ICSSClassProvider;
 public final class CBootstrapIconCSS
 {
   // Note: all CSS classes were created via MainExtractBootstrapIconsCSSClasses
-  // for 1.11.3
+  // for 1.13.2
   public static final ICSSClassProvider BI = DefaultCSSClassProvider.create ("bi");
   public static final ICSSClassProvider BI_0_CIRCLE = DefaultCSSClassProvider.create ("bi-0-circle");
   public static final ICSSClassProvider BI_0_CIRCLE_FILL = DefaultCSSClassProvider.create ("bi-0-circle-fill");
@@ -95,9 +95,11 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_AMD = DefaultCSSClassProvider.create ("bi-amd");
   public static final ICSSClassProvider BI_ANDROID = DefaultCSSClassProvider.create ("bi-android");
   public static final ICSSClassProvider BI_ANDROID2 = DefaultCSSClassProvider.create ("bi-android2");
+  public static final ICSSClassProvider BI_ANTHROPIC = DefaultCSSClassProvider.create ("bi-anthropic");
   public static final ICSSClassProvider BI_APP = DefaultCSSClassProvider.create ("bi-app");
   public static final ICSSClassProvider BI_APP_INDICATOR = DefaultCSSClassProvider.create ("bi-app-indicator");
   public static final ICSSClassProvider BI_APPLE = DefaultCSSClassProvider.create ("bi-apple");
+  public static final ICSSClassProvider BI_APPLE_MUSIC = DefaultCSSClassProvider.create ("bi-apple-music");
   public static final ICSSClassProvider BI_ARCHIVE = DefaultCSSClassProvider.create ("bi-archive");
   public static final ICSSClassProvider BI_ARCHIVE_FILL = DefaultCSSClassProvider.create ("bi-archive-fill");
   public static final ICSSClassProvider BI_ARROW_90DEG_DOWN = DefaultCSSClassProvider.create ("bi-arrow-90deg-down");
@@ -251,6 +253,9 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_BATTERY_CHARGING = DefaultCSSClassProvider.create ("bi-battery-charging");
   public static final ICSSClassProvider BI_BATTERY_FULL = DefaultCSSClassProvider.create ("bi-battery-full");
   public static final ICSSClassProvider BI_BATTERY_HALF = DefaultCSSClassProvider.create ("bi-battery-half");
+  public static final ICSSClassProvider BI_BATTERY_LOW = DefaultCSSClassProvider.create ("bi-battery-low");
+  public static final ICSSClassProvider BI_BEAKER = DefaultCSSClassProvider.create ("bi-beaker");
+  public static final ICSSClassProvider BI_BEAKER_FILL = DefaultCSSClassProvider.create ("bi-beaker-fill");
   public static final ICSSClassProvider BI_BEHANCE = DefaultCSSClassProvider.create ("bi-behance");
   public static final ICSSClassProvider BI_BELL = DefaultCSSClassProvider.create ("bi-bell");
   public static final ICSSClassProvider BI_BELL_FILL = DefaultCSSClassProvider.create ("bi-bell-fill");
@@ -264,6 +269,7 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_BINOCULARS_FILL = DefaultCSSClassProvider.create ("bi-binoculars-fill");
   public static final ICSSClassProvider BI_BLOCKQUOTE_LEFT = DefaultCSSClassProvider.create ("bi-blockquote-left");
   public static final ICSSClassProvider BI_BLOCKQUOTE_RIGHT = DefaultCSSClassProvider.create ("bi-blockquote-right");
+  public static final ICSSClassProvider BI_BLUESKY = DefaultCSSClassProvider.create ("bi-bluesky");
   public static final ICSSClassProvider BI_BLUETOOTH = DefaultCSSClassProvider.create ("bi-bluetooth");
   public static final ICSSClassProvider BI_BODY_TEXT = DefaultCSSClassProvider.create ("bi-body-text");
   public static final ICSSClassProvider BI_BOOK = DefaultCSSClassProvider.create ("bi-book");
@@ -587,6 +593,7 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_CIRCLE_FILL = DefaultCSSClassProvider.create ("bi-circle-fill");
   public static final ICSSClassProvider BI_CIRCLE_HALF = DefaultCSSClassProvider.create ("bi-circle-half");
   public static final ICSSClassProvider BI_CIRCLE_SQUARE = DefaultCSSClassProvider.create ("bi-circle-square");
+  public static final ICSSClassProvider BI_CLAUDE = DefaultCSSClassProvider.create ("bi-claude");
   public static final ICSSClassProvider BI_CLIPBOARD = DefaultCSSClassProvider.create ("bi-clipboard");
   public static final ICSSClassProvider BI_CLIPBOARD_CHECK = DefaultCSSClassProvider.create ("bi-clipboard-check");
   public static final ICSSClassProvider BI_CLIPBOARD_CHECK_FILL = DefaultCSSClassProvider.create ("bi-clipboard-check-fill");
@@ -700,6 +707,7 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_CROP = DefaultCSSClassProvider.create ("bi-crop");
   public static final ICSSClassProvider BI_CROSSHAIR = DefaultCSSClassProvider.create ("bi-crosshair");
   public static final ICSSClassProvider BI_CROSSHAIR2 = DefaultCSSClassProvider.create ("bi-crosshair2");
+  public static final ICSSClassProvider BI_CSS = DefaultCSSClassProvider.create ("bi-css");
   public static final ICSSClassProvider BI_CUP = DefaultCSSClassProvider.create ("bi-cup");
   public static final ICSSClassProvider BI_CUP_FILL = DefaultCSSClassProvider.create ("bi-cup-fill");
   public static final ICSSClassProvider BI_CUP_HOT = DefaultCSSClassProvider.create ("bi-cup-hot");
@@ -1101,6 +1109,10 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_FIRE = DefaultCSSClassProvider.create ("bi-fire");
   public static final ICSSClassProvider BI_FLAG = DefaultCSSClassProvider.create ("bi-flag");
   public static final ICSSClassProvider BI_FLAG_FILL = DefaultCSSClassProvider.create ("bi-flag-fill");
+  public static final ICSSClassProvider BI_FLASK = DefaultCSSClassProvider.create ("bi-flask");
+  public static final ICSSClassProvider BI_FLASK_FILL = DefaultCSSClassProvider.create ("bi-flask-fill");
+  public static final ICSSClassProvider BI_FLASK_FLORENCE = DefaultCSSClassProvider.create ("bi-flask-florence");
+  public static final ICSSClassProvider BI_FLASK_FLORENCE_FILL = DefaultCSSClassProvider.create ("bi-flask-florence-fill");
   public static final ICSSClassProvider BI_FLOPPY = DefaultCSSClassProvider.create ("bi-floppy");
   public static final ICSSClassProvider BI_FLOPPY_FILL = DefaultCSSClassProvider.create ("bi-floppy-fill");
   public static final ICSSClassProvider BI_FLOPPY2 = DefaultCSSClassProvider.create ("bi-floppy2");
@@ -1119,6 +1131,7 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_FOLDER2 = DefaultCSSClassProvider.create ("bi-folder2");
   public static final ICSSClassProvider BI_FOLDER2_OPEN = DefaultCSSClassProvider.create ("bi-folder2-open");
   public static final ICSSClassProvider BI_FONTS = DefaultCSSClassProvider.create ("bi-fonts");
+  public static final ICSSClassProvider BI_FORK_KNIFE = DefaultCSSClassProvider.create ("bi-fork-knife");
   public static final ICSSClassProvider BI_FORWARD = DefaultCSSClassProvider.create ("bi-forward");
   public static final ICSSClassProvider BI_FORWARD_FILL = DefaultCSSClassProvider.create ("bi-forward-fill");
   public static final ICSSClassProvider BI_FRONT = DefaultCSSClassProvider.create ("bi-front");
@@ -1151,9 +1164,13 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_GITLAB = DefaultCSSClassProvider.create ("bi-gitlab");
   public static final ICSSClassProvider BI_GLOBE = DefaultCSSClassProvider.create ("bi-globe");
   public static final ICSSClassProvider BI_GLOBE_AMERICAS = DefaultCSSClassProvider.create ("bi-globe-americas");
+  public static final ICSSClassProvider BI_GLOBE_AMERICAS_FILL = DefaultCSSClassProvider.create ("bi-globe-americas-fill");
   public static final ICSSClassProvider BI_GLOBE_ASIA_AUSTRALIA = DefaultCSSClassProvider.create ("bi-globe-asia-australia");
+  public static final ICSSClassProvider BI_GLOBE_ASIA_AUSTRALIA_FILL = DefaultCSSClassProvider.create ("bi-globe-asia-australia-fill");
   public static final ICSSClassProvider BI_GLOBE_CENTRAL_SOUTH_ASIA = DefaultCSSClassProvider.create ("bi-globe-central-south-asia");
+  public static final ICSSClassProvider BI_GLOBE_CENTRAL_SOUTH_ASIA_FILL = DefaultCSSClassProvider.create ("bi-globe-central-south-asia-fill");
   public static final ICSSClassProvider BI_GLOBE_EUROPE_AFRICA = DefaultCSSClassProvider.create ("bi-globe-europe-africa");
+  public static final ICSSClassProvider BI_GLOBE_EUROPE_AFRICA_FILL = DefaultCSSClassProvider.create ("bi-globe-europe-africa-fill");
   public static final ICSSClassProvider BI_GLOBE2 = DefaultCSSClassProvider.create ("bi-globe2");
   public static final ICSSClassProvider BI_GOOGLE = DefaultCSSClassProvider.create ("bi-google");
   public static final ICSSClassProvider BI_GOOGLE_PLAY = DefaultCSSClassProvider.create ("bi-google-play");
@@ -1278,6 +1295,7 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_INPUT_CURSOR_TEXT = DefaultCSSClassProvider.create ("bi-input-cursor-text");
   public static final ICSSClassProvider BI_INSTAGRAM = DefaultCSSClassProvider.create ("bi-instagram");
   public static final ICSSClassProvider BI_INTERSECT = DefaultCSSClassProvider.create ("bi-intersect");
+  public static final ICSSClassProvider BI_JAVASCRIPT = DefaultCSSClassProvider.create ("bi-javascript");
   public static final ICSSClassProvider BI_JOURNAL = DefaultCSSClassProvider.create ("bi-journal");
   public static final ICSSClassProvider BI_JOURNAL_ALBUM = DefaultCSSClassProvider.create ("bi-journal-album");
   public static final ICSSClassProvider BI_JOURNAL_ARROW_DOWN = DefaultCSSClassProvider.create ("bi-journal-arrow-down");
@@ -1324,6 +1342,8 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_LAYOUT_TEXT_WINDOW_REVERSE = DefaultCSSClassProvider.create ("bi-layout-text-window-reverse");
   public static final ICSSClassProvider BI_LAYOUT_THREE_COLUMNS = DefaultCSSClassProvider.create ("bi-layout-three-columns");
   public static final ICSSClassProvider BI_LAYOUT_WTF = DefaultCSSClassProvider.create ("bi-layout-wtf");
+  public static final ICSSClassProvider BI_LEAF = DefaultCSSClassProvider.create ("bi-leaf");
+  public static final ICSSClassProvider BI_LEAF_FILL = DefaultCSSClassProvider.create ("bi-leaf-fill");
   public static final ICSSClassProvider BI_LIFE_PRESERVER = DefaultCSSClassProvider.create ("bi-life-preserver");
   public static final ICSSClassProvider BI_LIGHTBULB = DefaultCSSClassProvider.create ("bi-lightbulb");
   public static final ICSSClassProvider BI_LIGHTBULB_FILL = DefaultCSSClassProvider.create ("bi-lightbulb-fill");
@@ -1366,6 +1386,8 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_MARKER_TIP = DefaultCSSClassProvider.create ("bi-marker-tip");
   public static final ICSSClassProvider BI_MASK = DefaultCSSClassProvider.create ("bi-mask");
   public static final ICSSClassProvider BI_MASTODON = DefaultCSSClassProvider.create ("bi-mastodon");
+  public static final ICSSClassProvider BI_MEASURING_CUP = DefaultCSSClassProvider.create ("bi-measuring-cup");
+  public static final ICSSClassProvider BI_MEASURING_CUP_FILL = DefaultCSSClassProvider.create ("bi-measuring-cup-fill");
   public static final ICSSClassProvider BI_MEDIUM = DefaultCSSClassProvider.create ("bi-medium");
   public static final ICSSClassProvider BI_MEGAPHONE = DefaultCSSClassProvider.create ("bi-megaphone");
   public static final ICSSClassProvider BI_MEGAPHONE_FILL = DefaultCSSClassProvider.create ("bi-megaphone-fill");
@@ -1425,6 +1447,7 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_OCTAGON = DefaultCSSClassProvider.create ("bi-octagon");
   public static final ICSSClassProvider BI_OCTAGON_FILL = DefaultCSSClassProvider.create ("bi-octagon-fill");
   public static final ICSSClassProvider BI_OCTAGON_HALF = DefaultCSSClassProvider.create ("bi-octagon-half");
+  public static final ICSSClassProvider BI_OPENAI = DefaultCSSClassProvider.create ("bi-openai");
   public static final ICSSClassProvider BI_OPENCOLLECTIVE = DefaultCSSClassProvider.create ("bi-opencollective");
   public static final ICSSClassProvider BI_OPTICAL_AUDIO = DefaultCSSClassProvider.create ("bi-optical-audio");
   public static final ICSSClassProvider BI_OPTICAL_AUDIO_FILL = DefaultCSSClassProvider.create ("bi-optical-audio-fill");
@@ -1481,6 +1504,7 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_PEOPLE = DefaultCSSClassProvider.create ("bi-people");
   public static final ICSSClassProvider BI_PEOPLE_FILL = DefaultCSSClassProvider.create ("bi-people-fill");
   public static final ICSSClassProvider BI_PERCENT = DefaultCSSClassProvider.create ("bi-percent");
+  public static final ICSSClassProvider BI_PERPLEXITY = DefaultCSSClassProvider.create ("bi-perplexity");
   public static final ICSSClassProvider BI_PERSON = DefaultCSSClassProvider.create ("bi-person");
   public static final ICSSClassProvider BI_PERSON_ADD = DefaultCSSClassProvider.create ("bi-person-add");
   public static final ICSSClassProvider BI_PERSON_ARMS_UP = DefaultCSSClassProvider.create ("bi-person-arms-up");
@@ -1968,6 +1992,7 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_TRUCK_FRONT = DefaultCSSClassProvider.create ("bi-truck-front");
   public static final ICSSClassProvider BI_TRUCK_FRONT_FILL = DefaultCSSClassProvider.create ("bi-truck-front-fill");
   public static final ICSSClassProvider BI_TSUNAMI = DefaultCSSClassProvider.create ("bi-tsunami");
+  public static final ICSSClassProvider BI_TUX = DefaultCSSClassProvider.create ("bi-tux");
   public static final ICSSClassProvider BI_TV = DefaultCSSClassProvider.create ("bi-tv");
   public static final ICSSClassProvider BI_TV_FILL = DefaultCSSClassProvider.create ("bi-tv-fill");
   public static final ICSSClassProvider BI_TWITCH = DefaultCSSClassProvider.create ("bi-twitch");
@@ -1984,6 +2009,7 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_TYPE_ITALIC = DefaultCSSClassProvider.create ("bi-type-italic");
   public static final ICSSClassProvider BI_TYPE_STRIKETHROUGH = DefaultCSSClassProvider.create ("bi-type-strikethrough");
   public static final ICSSClassProvider BI_TYPE_UNDERLINE = DefaultCSSClassProvider.create ("bi-type-underline");
+  public static final ICSSClassProvider BI_TYPESCRIPT = DefaultCSSClassProvider.create ("bi-typescript");
   public static final ICSSClassProvider BI_UBUNTU = DefaultCSSClassProvider.create ("bi-ubuntu");
   public static final ICSSClassProvider BI_UI_CHECKS = DefaultCSSClassProvider.create ("bi-ui-checks");
   public static final ICSSClassProvider BI_UI_CHECKS_GRID = DefaultCSSClassProvider.create ("bi-ui-checks-grid");
@@ -1998,6 +2024,8 @@ public final class CBootstrapIconCSS
   public static final ICSSClassProvider BI_UNIVERSAL_ACCESS_CIRCLE = DefaultCSSClassProvider.create ("bi-universal-access-circle");
   public static final ICSSClassProvider BI_UNLOCK = DefaultCSSClassProvider.create ("bi-unlock");
   public static final ICSSClassProvider BI_UNLOCK_FILL = DefaultCSSClassProvider.create ("bi-unlock-fill");
+  public static final ICSSClassProvider BI_UNLOCK2 = DefaultCSSClassProvider.create ("bi-unlock2");
+  public static final ICSSClassProvider BI_UNLOCK2_FILL = DefaultCSSClassProvider.create ("bi-unlock2-fill");
   public static final ICSSClassProvider BI_UPC = DefaultCSSClassProvider.create ("bi-upc");
   public static final ICSSClassProvider BI_UPC_SCAN = DefaultCSSClassProvider.create ("bi-upc-scan");
   public static final ICSSClassProvider BI_UPLOAD = DefaultCSSClassProvider.create ("bi-upload");
